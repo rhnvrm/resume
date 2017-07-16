@@ -1,0 +1,138 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{resume_snu}[11pt]
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\usepackage{hyperref}
+
+% Following packages are required for the table:
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{graphicx}
+
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\setlength{\headsep}{24pt}  % space between header and text
+%\setlength{\headheight}{24pt} % allow room for 2-line header
+\pagestyle{fancy}     % set pagestyle for document
+%\rhead{ {\it Z. Zinger}\\{\it p. \thepage} } % put text in header (right side)
+\cfoot{}                                     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
+
+% Colored background macro
+\usepackage{xcolor}
+\definecolor{shadecolor}{RGB}{8, 75, 152}
+\newcommand{\mybox}[1]{\par\noindent\color{white}\colorbox{shadecolor}
+	{\parbox{\dimexpr\textwidth-2\fboxsep\relax}{#1}}}
+
+\begin{document}
+\thispagestyle{empty} % this page has no header  
+\name{\href{http://rohanverma.net}{ROHAN VERMA}}% the \\[12pt] adds a blank line after name
+
+\address{\href{tel:+919911296253}{+91 9911296253}}
+\address{\href{mailto://hello@rohanverma.net}{hello@rohanverma.net}, \href{http://github.com/rhnvrm}{github.com/rhnvrm}, \href{http://linkedin.com/in/rhnvrm}{ linkedin.com/in/rhnvrm}}
+\logo{logo} % logo file
+
+\begin{resume}
+\vspace{-15pt}
+\section{\mybox{ACADEMIC QUALIFICATIONS}}
+\vspace{-2pt} 
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{c c c c}
+	\rowcolor{shadecolor} 
+	\vspace{1pt}
+	{\color[HTML]{FFFFFF} \textbf{Name of Institution}} & {\color[HTML]{FFFFFF} \textbf{Course/Board}} & {\color[HTML]{FFFFFF} \textbf{Year of Passing}} & {\color[HTML]{FFFFFF} \textbf{CGPA/\%}} \\ 
+	Shiv Nadar University                               & B.Tech Computer Science and Engineering      & 2018                                            & 7.25                                    \\ 
+	Apeejay School, Pitampura                           & CBSE, Class 12th                             & 2014                                            & 84.25\% (Best of 4)                     \\ 
+	Apeejay School, Pitampura                           & CBSE, Class 10th                             & 2012                                            & 9.2                                     \\ \hline
+\end{tabular}%
+}
+
+
+\vspace{-10pt}
+\section{\mybox{PROFESSIONAL EXPERIENCE}} 
+\vspace{2pt}
+	{\sl \textbf{Google Summer of Code}, The Apache Software Foundation (ASF)} \hfill        May - August 2016 \\
+	Open Source Development for Apache Allura       \hfill   (Summer Internship)
+  
+	\begin{itemize} \itemsep -2pt % reduce space between items
+	\item Improved the Discussion Tool and UI/UX of\textit{ Apache Allura}. Worked on adding new
+	features to the project. All code was tested using CI, reviewed by the community and
+	pushed to production on \textit{SourceForge.net}
+	\item Awarded membership of the Project Management Committee (PMC) in the Apache Allura project and ASF Committer-ship 
+	\item Received a travel grant from the ASF and the Linux
+	Foundation to talk about the project at \textit{Barcamp ApacheCon Europe, Seville}. Helped with the organization of ApacheCon Seville and Apache BigData as a Session Host.
+	\end{itemize}\vspace{-10pt}
+	
+	{\sl \textbf{Association for Computing Machinery (ACM)}, Shiv Nadar University} \hfill        Nov 2015 - Nov 2016 \\
+	Treasurer       \hfill   (Position of Responsibility)
+	
+	\begin{itemize} \itemsep -2pt % reduce space between items
+		\item Piloted a new series of events titled \textit{HackIt} where we hosted tutorials on
+		various topics. Personally conducted workshops to teach and guide peers. Organized a \textit{Hackathon} during the technical fest.
+		\item Qualified for ACM ICPC India Regional Onsite round at Amrita University (2015)
+	\end{itemize}\vspace{-10pt}
+	
+	{\sl \textbf{Learning \& Academic Support Center (LASC)}, Shiv Nadar University} \hfill        Mar 2017 - May 2017 \\
+	Student Tutor - Data Structures       \hfill   (Teaching)
+	
+	\begin{itemize} \itemsep -2pt % reduce space between items
+		\item Tutored junior peers and coordinated with the faculty course instructor to help students cope with the academic rigor required to succeed in the course.
+	\end{itemize}\vspace{-10pt}
+
+
+\vspace{-5pt}
+\section{\mybox{ TECHNICAL SKILLS}}
+\vspace{12pt} 
+\begin{itemize} \itemsep -2pt % reduce space between items
+	\item \textbf{Programming languages} \hfill Python, C/C++, Java, Javascript
+	\item \textbf{Web Technologies} \hfill HTML5/CSS3, jQuery, NodeJS, Flask, Django, MySQL, MongoDB
+	\item \textbf{Data Science} \hfill Pandas, sklearn, Tensorflow, Jupyter, Julia
+	\item \textbf{Software Skills} \hfill Git, Bash, Linux, \LaTeX
+\end{itemize}
+
+\vspace{-10pt}
+\section{\mybox{ ADDITIONAL SKILLS/QUALIFICATIONS }}
+\vspace{12pt} 
+\begin{itemize} \itemsep -2pt % reduce space between items
+ 	\item Machine Learning Engineer Nanodegree \hfill \href{https://profiles.udacity.com/p/u7138707}{Udacity.com} 
+	\item Specialization in Algorithms \hfill Coursera.com 
+\end{itemize}
+
+\vspace{-10pt}
+\section{\mybox{ RECENT PROJECTS }}
+
+\begin{itemize} \itemsep -2pt % reduce space between items
+	\item \textbf{New User Booking Prediction }\hfill \href{https://github.com/rhnvrm/machine-learning-nanodegree/tree/master/projects/capstone_project_final}{\textit{ML Nanodegree Capstone Project}}  \\
+	Built a model using data from the Airbnb New User Bookings dataset and predicted the destination of choice for a new users' first booking using machine learning.
+	\item \textbf{Foodify App}\hfill \href{https://github.com/CapsLockHacks}{\textit{Github}}  \\
+	Deployed and built an API using Flask which integrated other well-known APIs for our team working on Android. Code was well documented and deployed on Heroku using git hooks. 
+	\item For other projects, please visit \href{http://rohanverma.net/blog/category/project/}{rohanverma.net/blog/}
+\end{itemize}
+
+
+ 
+\vspace{-10pt}
+\section{\mybox{ AWARDS \& RECOGNITION }}
+ \vspace{12pt} 
+ \begin{itemize} \itemsep -2pt % reduce space between items
+ 	\item Received Special Award for being 'Best in Computer Science', 2013 by the Principal for extracurricular participation in inter-school tech events.
+ \end{itemize}
+\end{resume} 
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
